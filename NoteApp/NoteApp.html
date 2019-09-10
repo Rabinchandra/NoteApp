@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="noteappstyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Amaranth|Barriecito|Courgette|Luckiest+Guy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fontawesome.com/icons/plug?style=solid">
+
+</head>
+<body onresize="resizeResponsive()">
+  <div class="container">
+    <div class="sidebar" id="sidebar">
+      <input type="text" id="search" autocomplete="off" placeholder="Search...">
+      <ul class="item-list" id="item-list">
+      </ul>
+    </div>
+    <div class="main" id="main">
+      <div class="main-top-bar">
+        <div id="responsivebtn" onclick="responsive()">&#9776;</div>
+        <div class="fontstyle styles">
+          <center><span>Font Style</span></center>
+          <div class="fontlist">
+            <ul id="font-list">
+              <li>Sans-serif</li>
+              <li>Amaranth</li>
+              <li>Barriecito</li>
+            </ul>
+          </div>
+        </div>
+        <div class="fontsize">
+          <span>Font Size</span> <input type="text" id="sizevalue" onkeyup="sizechange(this)">
+        </div>
+        <div class="fontcolor styles">
+          <center><span>Color</span></center>
+          <div class="fontlist">
+            <ul id="color-list">
+              <li>Red</li>
+              <li>Green</li>
+              <li>Skyblue</li>
+              <li>Black</li>
+          </ul>
+          </div>
+        </div>
+        <button id="save">Save</button>
+        <button id="delete">Delete</button>
+      </div>
+      <div class="text-body" id="text-body">
+        <textarea class="textarea" id="textarea"></textarea>
+      </div>
+      <div class="add" id="add">+</div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
